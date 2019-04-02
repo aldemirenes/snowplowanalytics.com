@@ -89,9 +89,20 @@ sass:
 excerpt_separator: "<!--more-->"
 
 
+# Redirects - Use Collections to Keep Redirects Organized
+collections:
+  redirects:
+    output: true
+    permalink: /:path/
 
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
 
-
+#########################################################
 
 ############################################################
 # Jekyll default pagination
